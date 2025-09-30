@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "bootswatch": "^5.3.7"
+    "bootswatch": "^5.3.7",
+    "tinymce": "^8.1.2"
   }
 }
