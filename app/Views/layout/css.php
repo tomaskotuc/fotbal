@@ -2,5 +2,5 @@
 <link rel="stylesheet" href="<?= base_url('node_modules/bootstwatch/dist/lux/bootstrap.css'); ?>">
 <script src="<?= base_url('node_modules/bootstrap/dist/js/bootstrap.bundle.js') ?>"></script>
 <link rel="stylesheet" href="<?= base_url('node_modules/flag-icons/css/flag-icons.min.css'); ?>">
-<script src="<?= base_url("node_modules/tinymce/tinymce.min.js") ?> referrerpolicy="origin" crossorigin="anonymous")></script>
+<script src="<?= base_url('node_modules/tinymce/tinymce.min.js') ?>" referrerpolicy="origin" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="<?= base_url('node_modules/@fortawesome/fontawesome-free/css/all.min.css'); ?>">

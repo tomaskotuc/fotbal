@@ -116,7 +116,7 @@ class Main extends BaseController
         $id = $this->article->insert([
             'title' => $this->request->getPost('title'),
             'photo' => $noveJmeno ?: null, // v DB jen název souboru
-            'date'  => $this->request->getPost('date'),
+            'date'  => strtotime($this->request->getPost('date')),
             'top'   => $this->request->getPost('top') ? 1 : 0,
             'text'  => $this->request->getPost('text'),
         ], true);
@@ -163,6 +163,7 @@ class Main extends BaseController
     {
         $data = [
             'title'     => $this->request->getPost('title'),
+            'date'  => strtotime($this->request->getPost('date')),
             'link'      => 'article/' . $this->request->getPost('link'),
             'text'      => $this->request->getPost('text'),
             'top'       => $this->request->getPost('top') ? 1 : 0,

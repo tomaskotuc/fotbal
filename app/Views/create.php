@@ -1,6 +1,15 @@
 <?= $this->extend('layout/template'); ?>
- 
 <?= $this->section('content'); ?>
+
+<script>
+    tinymce.init({
+        selector: '#mytextarea',
+        license_key: 'gpl',
+        plugins: "code",
+        toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link image table |',
+        promotion: false
+    });
+</script>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
@@ -45,7 +54,7 @@
  
                         <div class="mb-3">
                             <label for="text" class="form-label">Text článku</label>
-                            <textarea class="form-control" id="text" name="text" rows="5" placeholder="Obsah článku..." required></textarea>
+                            <textarea class="form-control" id="mytextarea" name="text" rows="5" placeholder="Obsah článku..." required></textarea>
                         </div>
  
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
